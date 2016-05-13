@@ -10,12 +10,12 @@ def hello():
     date = int(timeString[8:10])
     
     dl = 20 - date
-    DL = str(dl)
+    daysLeft = str(dl)
     
     templateData = {
         'title' : "Hello",
         'time' : timeString,
-        'DL' : DL
+        'DL' : daysLeft
     }
     return render_template("main.html", **templateData)
 
